@@ -1,0 +1,8 @@
+# DBFit connection properties file
+
+#2) OR specify service, username and password as separate properties
+service=migrationtestingdb.cxqfjx5t81on.ap-south-1.rds.amazonaws.com
+username=admin
+password=admin123
+#optionally specify a database name
+database=college_mgmt
