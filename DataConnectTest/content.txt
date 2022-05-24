@@ -1,8 +1,8 @@
 !path lib/*.jar
 !|dbfit.MySqlTest|
 
-!|Connect|mytrainingdb.cgiubsxpc6xe.ap-southeast-1.rds.amazonaws.com|admin|admin123|college_mgmt|
-
+!|ConnectUsingFile|RDSConnect.txt|
+!|Inspect Table|tbl_college|
 !|Store Query|select * from tbl_college order by college_id|query1|
 
 !|Store Query|select * from tbl_users order by user_id|query11|
@@ -10,7 +10,7 @@
 |Store Query|select studentname as sname from tbl_student where id =1  |rdssname                   |
 
 
-!|Connect|13.250.39.158|root|root|college_mgmt|
+!|Connect|collegemngtfromrds.mysql.database.azure.com|collegemngtadmin|Verity@123|college_mgmt|
 
 !|Store Query|select * from tbl_college order by college_id|query2|
 
@@ -20,11 +20,11 @@
 
 
 
-!|Compare Stored Queries Hide Matching Rows|query1|query2|
+!|Compare Stored Queries|query1|query2|
 |collegename|n?           |
 
 
-!|Compare Stored Queries Hide Matching Rows|query11|query22|
+!|Compare Stored Queries|query11|query22|
 |username|n?           |
 
 
