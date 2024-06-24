@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20220319</FitNesseVersion>
+  <rootPath>DataMigrationTest</rootPath>
+  <result>
+    <counts>
+      <right>84</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2024-06-24T15:19:31+05:30</date>
+    <runTimeInMillis>2689</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;classpath: lib/*.jar&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;dbfit.MySqlTest&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ConnectUsingFile&lt;/td&gt;
+		&lt;td&gt;RDSConnect.txt&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Inspect Table&lt;/td&gt;
+		&lt;td&gt;tbl_college&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;college_id&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;collegename&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt; &lt;span class="fit_grey"&gt;branch&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Store Query&lt;/td&gt;
+		&lt;td&gt;select * from tbl_college order by college_id&lt;/td&gt;
+		&lt;td&gt;query1&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Store Query&lt;/td&gt;
+		&lt;td&gt;select * from tbl_users order by user_id&lt;/td&gt;
+		&lt;td&gt;query11&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Store Query&lt;/td&gt;
+		&lt;td&gt;select studentname as sname from tbl_student where id =1&lt;/td&gt;
+		&lt;td&gt;rdssname&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Connect&lt;/td&gt;
+		&lt;td&gt;cloudtest.c964gqgwctqd.ap-southeast-1.rds.amazonaws.com&lt;/td&gt;
+		&lt;td&gt;admin&lt;/td&gt;
+		&lt;td&gt;admin123&lt;/td&gt;
+		&lt;td&gt;college_mgmt&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Store Query&lt;/td&gt;
+		&lt;td&gt;select * from tbl_college order by college_id&lt;/td&gt;
+		&lt;td&gt;query2&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Store Query&lt;/td&gt;
+		&lt;td&gt;select * from tbl_users order by user_id&lt;/td&gt;
+		&lt;td&gt;query22&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Store Query&lt;/td&gt;
+		&lt;td&gt;select studentname as sname from tbl_student where id =1&lt;/td&gt;
+		&lt;td&gt;localsname&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Compare Stored Queries&lt;/td&gt;
+		&lt;td&gt;query1&lt;/td&gt;
+		&lt;td&gt;query2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;collegename&lt;/td&gt;
+		&lt;td colspan="2"&gt;branch&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 1&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 1 Branch 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 2&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 2 Branch 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 3&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 3 Branch 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 4&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 4 Branch 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 5&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 5 Branch 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 6&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 6 Branch 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 7&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 7 Branch 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 8&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 8 Branch 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 9&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 9 Branch 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Test College 10&lt;/td&gt;
+&lt;td class="pass"&gt;Test College 10 Branch 1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Compare Stored Queries&lt;/td&gt;
+		&lt;td&gt;query11&lt;/td&gt;
+		&lt;td&gt;query22&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;username&lt;/td&gt;
+		&lt;td&gt;email&lt;/td&gt;
+		&lt;td&gt;n?&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;SuperUser&lt;/td&gt;
+&lt;td class="pass"&gt;superuser@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 1&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_1@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 2&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_2@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 3&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_3@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 4&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_4@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 5&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_5@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 6&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_6@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 7&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_7@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 8&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_8@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 9&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_9@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 1 College 10&lt;/td&gt;
+&lt;td class="pass"&gt;moderator1_10@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 1&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_1@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 2&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_2@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 3&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_3@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 4&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_4@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 5&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_5@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 6&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_6@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 7&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_7@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 8&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_8@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 9&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_9@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;Moderator 2 College 10&lt;/td&gt;
+&lt;td class="pass"&gt;moderator2_10@demo.com&lt;/td&gt;
+&lt;td class="pass"&gt;null&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;compare stored queries&lt;/td&gt;
+		&lt;td&gt;rdssname&lt;/td&gt;
+		&lt;td&gt;localsname&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;sname&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="pass"&gt;College 1 Student 1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>DataMigrationTest</relativePageName>
+  </result>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>"C:\Program Files\Java\jdk-17.0.2\bin\java" -cp C:\data\dbfit-complete-4.0.0\lib\checker-qual-3.5.0.jar;C:\data\dbfit-complete-4.0.0\lib\commons-codec-1.10.jar;C:\data\dbfit-complete-4.0.0\lib\commons-io-2.4.jar;C:\data\dbfit-complete-4.0.0\lib\commons-lang3-3.4.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-core-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-db2-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-derby-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-docs-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-hsqldb-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-informix-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-mysql-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-netezza-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-oracle-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-postgres-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-snowflake-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-sqlserver-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\dbfit-teradata-4.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\fitlibrary-20091020.jar;C:\data\dbfit-complete-4.0.0\lib\fitnesse-20220319-standalone.jar;C:\data\dbfit-complete-4.0.0\lib\guava-20.0.jar;C:\data\dbfit-complete-4.0.0\lib\hsqldb-2.3.3.jar;C:\data\dbfit-complete-4.0.0\lib\javassist-3.21.0-GA.jar;C:\data\dbfit-complete-4.0.0\lib\mysql-connector-j-8.4.0.jar;C:\data\dbfit-complete-4.0.0\lib\mysql-connector-java-5.1.36.jar;C:\data\dbfit-complete-4.0.0\lib\ons-19.3.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\oraclepki-19.3.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\osdt_cert-19.3.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\osdt_core-19.3.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\postgresql-42.3.1.jar;C:\data\dbfit-complete-4.0.0\lib\reflections-0.9.11.jar;C:\data\dbfit-complete-4.0.0\lib\simplefan-19.3.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\snowflake-jdbc-3.13.0.jar;C:\data\dbfit-complete-4.0.0\lib\ucp-19.3.0.0.jar;C:\data\dbfit-complete-4.0.0\lib\fitnesse-20220319-standalone.jar fit.FitServer Smitha-HP 57507 3863</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr>Jun 24, 2024 3:19:30 PM org.reflections.Reflections scan
+INFO: Reflections took 65 ms to scan 12 urls, producing 63 keys and 146 values 
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Jun 24, 2024 3:19:31 PM org.reflections.Reflections scan
+INFO: Reflections took 18 ms to scan 12 urls, producing 63 keys and 146 values 
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>3544</totalRunTimeInMillis>
+</testResults>
+

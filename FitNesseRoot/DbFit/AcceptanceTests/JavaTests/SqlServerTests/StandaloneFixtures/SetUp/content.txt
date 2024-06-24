@@ -1,0 +1,5 @@
+|Import|
+|dbfit.fixture|
+
+|Database Environment|!-SQLServer-!|
+|Connect|localhost|!-FitNesseUser-!|!-FitN355#-!|!-FitNesseTestDB-!|

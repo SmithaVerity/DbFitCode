@@ -1,0 +1,13 @@
+!|dbfit.EmbeddedDerbyTest|
+
+!|Connect|jdbc:derby:memory:dbfitdb;create=true|
+
+|Execute Ddl|${CREATEUSERTABLE}|
+
+|Execute Ddl|${CREATEMAKEUSERPROC}|
+
+|Execute Ddl|${CREATECALCLENGTHPROC}|
+
+|Execute Ddl|${CREATEMULTIPLYPROC}|
+
+|Commit|

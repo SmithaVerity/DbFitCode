@@ -1,0 +1,13 @@
+|Import Fixture|
+|dbfit.fixture|
+
+|Database Environment|HSQLDB|
+|Connect|jdbc:hsqldb:mem:dbfit|
+
+|Execute Ddl|${CREATEUSERTABLE}|
+
+|Execute Ddl|${CREATEMAKEUSERPROC}|
+
+|Execute Ddl|${CREATEMULTIPLYPROC}|
+
+|Execute Ddl|${CREATECALCLENGTHPROC}|

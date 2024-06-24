@@ -1,0 +1,3 @@
+!|dbfit.SqlServerTest|
+
+!|Connect|localhost|FitNesseUser|FitN355#|FitNesseTestDB|
