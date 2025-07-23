@@ -10,7 +10,7 @@
 |Store Query|select studentname as sname from tbl_student where id =1|rdssname|
 
 
-!|Connect|cloudtest.c964gqgwctqd.ap-southeast-1.rds.amazonaws.com|admin|admin123|college_mgmt|
+!|Connect|smithadbserv.mysql.database.azure.com|smithadbuser|Verity@123|college_mgmt|
 !|Store Query|select * from tbl_college order by college_id|query2|
 
 !|Store Query|select * from tbl_users order by user_id|query22|
